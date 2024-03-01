@@ -1,0 +1,139 @@
+/* Start Variables */
+:root {
+  --main-color: #10cab7;
+  --secondary-color: #2c4755;
+  --section-padding: 60px;
+  --section-background: #f6f6f6;
+}
+
+/* End Variables */
+/* Start global rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: lightgrey;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End global rules */
+
+/* Start Header */
+.header {
+  padding: 20px;
+  background-color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header .container h1 {
+  font-size: 24px;
+  margin: 0;
+  color: white;
+}
+
+.header .container i {
+  color: white;
+}
+/* End Header */
+/* Start About */
+.about {
+  padding: 20px;
+  margin-bottom: 20px;
+  height: calc(100vh - 400px);
+  position: relative;
+}
+
+.about .info {
+  position: absolute;
+  width: 400px;
+  max-width: 100%;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.about .info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: solid black 1px;
+}
+.about .info ul li {
+  padding-bottom: 5px;
+}
+
+#welcome {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.about p:last-child {
+  font-weight: bold;
+}
+/* End About */
+/* Start Footer */
+.footer {
+  padding: 20px;
+  position: relative;
+}
+
+.footer .top10 {
+  position: absolute;
+  left: 50%;
+  translate: -50% 0;
+  text-align: center;
+}
+
+.footer .top10 p {
+  font-weight: bold;
+}
+
+.footer .top10 ol {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.footer .top10 ol li {
+  padding-bottom: 2px;
+}
